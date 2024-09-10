@@ -193,6 +193,13 @@ button:focus,
     box-shadow: none;
 }
 
+.factsNumbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width:1200px) {
     .container {
         max-width: 1170px;
@@ -215,6 +222,8 @@ button:focus,
 }
 
 .row_am {
+    padding: 50px 0;
+    text-align: center;
     padding: 50px 0;
 }
 
@@ -3483,14 +3492,51 @@ header.fix_style.white_header {
 }
 
 
+.info-block {
+    position: relative;
+    flex: 1;
+    margin: 20px;
+}
+
+.info-block span {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: var(--purple); /* Assuming the same color as other text */
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow effect */
+}
+
+.info-block p {
+    display: none;
+    font-size: 1.2rem;
+    color: var(--dark-purple);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.info-block:hover p {
+    display: block;
+    opacity: 1; /* Fade in the info text */
+}
 
 
+.info-block span:hover {
+    transform: scale(1.2); /* Slightly increase the size on hover */
+    box-shadow: 0 0 15px rgba(24, 237, 5, 0.6); /* Add a glowing effect around the number */
+}
 
-
-
-
-
-
-
-
-
+.overViewStyling{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dark-purple);
+}
