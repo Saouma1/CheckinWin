@@ -3540,3 +3540,56 @@ header.fix_style.white_header {
     font-weight: 700;
     color: var(--dark-purple);
 }
+
+.beta-announcement {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    background-color: #05c9a7; /* Updated background color */
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff; /* Added border */
+    box-sizing: border-box;
+}
+
+.beta-announcement-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll-bounce 10s linear infinite alternate; /* Faster scroll and bounce effect */
+}
+
+.beta-announcement-wrapper img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.beta-announcement-wrapper span {
+    font-size: 20px;
+    color: #fff; /* Changed text color for better contrast */
+}
+
+/* Keyframes for bouncing scroll */
+@keyframes scroll-bounce {
+    0% {
+        transform: translateX(15%); /* Start at the left edge */
+    }
+    100% {
+        transform: translateX(calc(30%)); /* Move to the right edge */
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .beta-announcement-wrapper img {
+        height: 30px;
+    }
+    .beta-announcement-wrapper span {
+        font-size: 16px;
+    }
+    .beta-announcement {
+        height: 50px;
+    }
+}
