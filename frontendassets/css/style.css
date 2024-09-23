@@ -816,6 +816,7 @@ header.fixed .navbar {
 
 /* hero slider control dots */
 .banner_section .owl-dots {
+    margin-bottom: 20px;
     margin-top: 40px;
 }
 
@@ -3592,4 +3593,16 @@ header.fix_style.white_header {
     .beta-announcement {
         height: 50px;
     }
+}
+
+.third-place-stamp {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.third-place-stamp img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block;
 }
