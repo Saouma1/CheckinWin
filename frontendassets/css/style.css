@@ -3594,15 +3594,3 @@ header.fix_style.white_header {
         height: 50px;
     }
 }
-
-.third-place-stamp {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.third-place-stamp img {
-    max-width: 150px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-}
